@@ -14,7 +14,7 @@ const newsList = News
 
 newsList.exec((err, data) => {
   res.render('aktualnosci', { title: 'Aktualnosci', data, search });
-  console.log(data)
+  
 })
  
 });
