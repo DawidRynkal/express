@@ -13,6 +13,7 @@ var indexRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');
 var aktualnosciRouter = require('./routes/aktualnosci');
 var quizRouter = require('./routes/quiz');
+var apiRouter = require('./routes/api');
 
 
 var app = express();
@@ -46,6 +47,7 @@ app.use('/', indexRouter);
 app.use('/admin', adminRouter);
 app.use('/quiz', quizRouter);
 app.use('/aktualnosci', aktualnosciRouter);
+app.use('/api', apiRouter);
 
 
 
